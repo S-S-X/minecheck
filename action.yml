@@ -1,0 +1,9 @@
+name: Minecheck runner
+description: "Luacheck for Minetest"
+author: SX / S-S-X
+branding:
+  icon: file-text
+  color: green
+runs:
+  using: docker
+  image: Dockerfile
