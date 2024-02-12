@@ -1,0 +1,2 @@
+# minecheck
+Minetest Luacheck
