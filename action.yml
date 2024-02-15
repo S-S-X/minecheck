@@ -2,8 +2,17 @@ name: Minecheck runner
 description: "Luacheck for Minetest"
 author: SX / S-S-X
 branding:
-  icon: file-text
+  icon: check
   color: green
+inputs:
+  args:
+    description: Arguments passed to luacheck
+    required: false
+    default: "."
 runs:
   using: docker
   image: Dockerfile
+  entrypoint: sh
+  args:
+    - -c
+    - luacheck ${{ inputs.args }}

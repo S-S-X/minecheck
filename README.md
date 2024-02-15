@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-      uses: S-S-X/minecheck@master
+    - uses: S-S-X/minecheck@master
 ```
